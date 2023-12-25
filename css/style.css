@@ -14,7 +14,7 @@ body {
 
 :root {
   --main-color: #131313;
-  --accent-color: #f0edf2;
+  --accent-color: #006fcd;
 }
 
 /* Navigation */
@@ -110,43 +110,43 @@ body {
   min-height: fit-content;
 }
 
-.card-img {
+.card__img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
 }
 
 .card__container {
   margin: 0;
   padding-block: 5rem;
-  border: 1px solid blue;
 }
 
 .card__content {
   margin-inline: 1.75rem;
   border-radius: 1.25rem;
   overflow: hidden;
-  border: 1px solid green;
 }
 
 .card__article {
   border-radius: 1.25rem;
   overflow: hidden;
-  border: 1px solid purple;
+  background-color: var(--main-color);
+  height: 400px !important;
 }
 
 .card__image {
   position: relative;
-  background-color: var(--first-color-light);
+  background-color: #fff;
   padding-top: 1.5rem;
   margin-bottom: -0.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0 50px 0 50px;
 }
 
 .card__data {
-  background-color: var(--container-color);
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   text-align: center;
@@ -175,22 +175,31 @@ body {
 
 .card__name {
   font-size: 1.4rem;
-  color: var(--main-color);
+  color: #fff;
   margin-bottom: 0.75rem;
+  font-weight: 700;
 }
 
 .card__description {
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 1.75rem;
+  color: #fff;
 }
 
 .card__button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--accent-color);
   padding: 0.75rem 1.5rem;
   border-radius: 0.25rem;
-  color: var(--dark-color);
+  color: #fff;
   font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.card__button:hover {
+  text-shadow: 0 0 15px #fff;
+  box-shadow: 0 0 15px var(--accent-color);
 }
 
 /* Swiper class */
@@ -204,7 +213,7 @@ body {
   width: initial;
   height: initial;
   font-size: 3rem;
-  color: var(--second-color);
+  color: var(--main-color) !important;
   display: none;
 }
 
@@ -217,12 +226,11 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background-color: hsl(212, 32%, 40%);
-  opacity: 1;
+  display: none !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--second-color);
+  display: none !important;
 }
 
 /*=============== BREAKPOINTS ===============*/
