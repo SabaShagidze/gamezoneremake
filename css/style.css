@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: #fff;
+}
+
 :root {
   --main-color: #131313;
   --accent-color: #f0edf2;
@@ -99,56 +103,6 @@ html {
 }
 
 /* Cards */
-.main-card-container {
-  padding: 1rem;
-  gap: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-.card-container-header {
-  text-align: center;
-  font-size: 3rem;
-}
-.card-container-inner {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.card {
-  width: 100px;
-  height: 150px;
-  padding: 1px;
-  border: 2px var(--main-color) solid !important;
-}
-
-.card-title {
-  color: var(--main-color);
-  font-size: 1.2rem;
-  font-weight: 800;
-}
-
-.card-price {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #e4000f;
-}
-
-.card-btn {
-  background: var(--main-color) !important;
-  border: var(--main-color) !important;
-  font-weight: 800;
-}
-
-.card-button {
-  width: 50%;
-  background-color: #e4000f;
-  color: #fff;
-  font-weight: 800;
-  border: none;
-  font-size: 0.8rem;
-  padding: 0.3rem;
-  border-radius: 5px;
-}
 
 @media (max-width: 990px) {
   .d-block {
