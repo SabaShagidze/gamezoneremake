@@ -30,7 +30,7 @@ let swiperCards = new Swiper(".card__content", {
     },
   },
   autoplay: {
-    delay: 2500,
+    delay: 2300,
     disableOnInteraction: false,
   },
 });

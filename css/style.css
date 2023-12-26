@@ -102,6 +102,92 @@ body {
   box-shadow: 0px 0px 15px #fff;
 }
 
+/* Category boxes */
+.category-box-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.category-box-inner-top {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.category-box {
+  width: 50%;
+  height: 20rem;
+  box-shadow: 4px 4px 4px var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-consoles {
+  background: url(../images/category/caregory1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.category-button {
+  width: 100%;
+  height: 100%;
+  background: rgba(39, 39, 39, 0.452);
+  transition: all 0.3s ease;
+  font-size: 5rem;
+}
+
+.category-button:hover {
+  background: transparent;
+}
+
+.category-games {
+  background: url(../images/category/category2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.category-pc {
+  background: url(../images/category/category3.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.category-laptop {
+  background: url(../images/category/category4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.category-vr {
+  background: url(../images/category/category5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.category-box-inner-bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.category-header {
+  text-align: center;
+}
+
+.category-header h4 {
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+
 /* Cards */
 .card-container-header {
   display: flex;
@@ -111,7 +197,7 @@ body {
 }
 
 .card-container-header h4 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 800;
   color: var(--main-color);
   text-align: center;
@@ -122,6 +208,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: fit-content;
+  padding: 2.5rem;
 }
 
 .card__img {
@@ -221,6 +308,7 @@ body {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: "";
+  display: none;
 }
 
 .swiper-button-prev,
@@ -246,6 +334,11 @@ body {
 
 .swiper-pagination-bullet-active {
   display: none !important;
+}
+
+/* Sales */
+.div-header {
+  margin-top: 4rem;
 }
 
 /*=============== BREAKPOINTS ===============*/
