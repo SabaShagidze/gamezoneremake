@@ -23,10 +23,14 @@ let swiperCards = new Swiper(".card__content", {
       slidesPerView: 3,
     },
     1120: {
-      slidesPerView: 4, 
+      slidesPerView: 4,
     },
     1400: {
       slidesPerView: 5,
     },
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
 });
