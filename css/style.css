@@ -531,6 +531,7 @@ body {
   .connect-input {
     justify-content: center;
     align-items: center;
+    width: 80%;
   }
   .connect-input input {
     width: 15rem;
@@ -554,7 +555,7 @@ body {
   }
 
   .card__image {
-   height: 12rem;
+    height: 12rem;
   }
 }
 
