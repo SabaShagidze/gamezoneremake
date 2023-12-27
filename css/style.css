@@ -62,6 +62,7 @@ body {
 /* Carousel */
 .carousel-container {
   background: var(--main-color);
+  margin-top: 4rem;
 }
 .d-block {
   height: 32rem;
